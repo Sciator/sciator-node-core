@@ -1,6 +1,6 @@
 import { readFile } from "fs";
 import { promisify } from "util";
-import { throwReturn, sleep } from "./Common";
+import { throwReturn } from "./Common";
 
 export class AppConfig<TAppConfig> {
   private _config: Readonly<TAppConfig> | undefined;
@@ -22,8 +22,6 @@ export class AppConfig<TAppConfig> {
       this._config = conf as any;
 
     } catch (e) {
-      console.error("Failed to load config. application will close");
-      await sleep(10_000);
       throw new Error("Failed to load config.");
     }
   }

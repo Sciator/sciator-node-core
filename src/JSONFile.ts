@@ -58,7 +58,6 @@ export class JsonFile<T> {
         .toString()
         ;
     } catch{
-      console.log("error reading data in " + this.filePath);
       return undefined;
     }
 

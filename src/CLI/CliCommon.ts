@@ -1,6 +1,9 @@
 import * as readline from "readline";
 import chalk from "chalk";
 
+// todo: replace console calls
+// tslint:disable: no-console
+
 export const CliQuestion = async (qq: string, nl = true): Promise<string> => {
   return new Promise((resolve) => {
     const read = readline.createInterface({
@@ -16,7 +19,7 @@ export const CliQuestion = async (qq: string, nl = true): Promise<string> => {
 };
 
 export const CliQuestionYN = async (qq: string) => {
-  let res: boolean | undefined = undefined;
+  let res: boolean | undefined;
   do {
     switch (await CliQuestion(qq + ` [${chalk.greenBright("Y")}/${chalk.redBright("N")}] `, false)) {
       case "Y": case "y":
@@ -36,7 +39,6 @@ export const CliCollectionSelectOne: {
   (col: string[]): Promise<string>,
 } = async <T>(col: T[], display: (d: T) => string = ((str: T) => str as any)): Promise<T> => {
 
-  console.log();
   col.map((x, i) => `${i.toString().padStart(3, " ")}: ${display(x)}`)
     .forEach(x => console.log(x))
     ;

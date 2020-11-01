@@ -10,10 +10,12 @@ export const randInt: {
   /** generates ranodm integer number */
   (minIncluded: number, maxExcluded: number): number;
 } = (a: number, b?: number): number => {
-  if (b === undefined)
+  if (b === undefined) {
     return Math.floor(Math.random() * a);
-  else
+  }
+  else {
     return Math.floor(Math.random() * (b - a)) + a;
+  }
 };
 
 
@@ -24,12 +26,16 @@ export const range: {
   (minIncluded: number, maxExcluded: number): number[];
 } = (a: number, b?: number): number[] => {
   const arr = [];
-  if (b === undefined)
-    for (let i = 0; i < a; i++)
+  if (b === undefined) {
+    for (let i = 0; i < a; i++) {
       arr.push(i);
-  else
-    for (let i = a; i < b; i++)
+    }
+  }
+  else {
+    for (let i = a; i < b; i++) {
       arr.push(i);
+    }
+  }
   return arr;
 };
 
@@ -79,8 +85,9 @@ export const selfMap = <TObj, TRet>(obj: TObj, fnc: (o: TObj) => TRet): TRet =>
 export const removeAllWhere = <T>(arr: T[], pred: (o: T) => boolean) => {
   const removed: T[] = [];
   for (let i = arr.length; i--;) {
-    if (pred(arr[i]))
+    if (pred(arr[i])) {
       removed.push(arr.splice(i, 1)[0]);
+    }
   }
   return removed.reverse();
 };
