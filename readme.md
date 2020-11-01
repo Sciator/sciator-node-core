@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/v/sciator-core?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/sciator-core)
 [![GitHub Workflow Status build](https://img.shields.io/github/workflow/status/sciator/sciator-node-core/Release?&style=for-the-badge)](https://github.com/sciator/sciator-node-core/releases)
 [![GitHub Workflow Status test](https://img.shields.io/github/workflow/status/sciator/sciator-node-core/Tests?label=tests&style=for-the-badge)](https://github.com/sciator/sciator-node-core/actions?query=workflow%3ATests)
 [![GitHub last commit](https://img.shields.io/github/last-commit/sciator/sciator-node-core?&style=for-the-badge)](https://github.com/sciator/sciator-node-core/commits/master)
