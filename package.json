@@ -32,5 +32,9 @@
     "core",
     "utils",
     "basics"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sciator/sciator-node-core.git"
+  }
 }
