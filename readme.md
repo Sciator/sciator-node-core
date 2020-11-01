@@ -5,7 +5,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/sciator/sciator-node-core?&style=for-the-badge)](https://github.com/sciator/sciator-node-core/graphs/commit-activity)
 [![Lines of code](https://img.shields.io/tokei/lines/github/sciator/sciator-node-core?&style=for-the-badge)](https://github.com/sciator/sciator-node-core/pulse)
 [![GitHub issues](https://img.shields.io/github/issues/sciator/sciator-node-core?&style=for-the-badge)](https://github.com/sciator/sciator-node-core/issues)
-[![GitHub](https://img.shields.io/github/license/sciator/sciator-node-core?&style=for-the-badge)](https://github.com/sciator/sciator-node-core/blob/master/LICENSE.md)
+[![GitHub](https://img.shields.io/github/license/Sciator/sciator-node-core?style=for-the-badge)](https://github.com/sciator/sciator-node-core/blob/master/LICENSE.md)
 [![GitHub top language](https://img.shields.io/github/languages/top/sciator/sciator-node-core?&style=for-the-badge)](https://github.com/sciator/sciator-node-core)
 
 [![Node js](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
