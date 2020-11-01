@@ -16,8 +16,6 @@
 [![github actions](https://img.shields.io/badge/GH%20Actions-%23161616.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/actions)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?&style=for-the-badge&logoColor=white)](https://github.com/semantic-release/semantic-release)
 
-All commited code should follow the [contributing](./contributing.md)
-
 # Usage
 
 install with `yarn add sciator-core` or `npm install sciator-core`
@@ -27,6 +25,8 @@ install with `yarn add sciator-core` or `npm install sciator-core`
 ___TODO___
 
 # Developement
+
+All commited code should follow the [contributing](./contributing.md)
 
 ## prerequisites
 - [node](https://nodejs.org/) installed
