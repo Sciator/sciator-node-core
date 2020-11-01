@@ -1,6 +1,6 @@
 import { readFile } from "fs";
 import { promisify } from "util";
-import { throwReturn } from "./Common";
+import { throwReturn } from "./common";
 
 export class AppConfig<TAppConfig> {
   private _config: Readonly<TAppConfig> | undefined;

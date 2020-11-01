@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { JSONparseNoError } from "./Common";
+import { JSONparseNoError } from "./common";
 import { TIMESTAMP_PROGRAM_RUN } from "./DateHelper";
 
 // todo: use async

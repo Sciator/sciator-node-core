@@ -4,7 +4,7 @@ import chalk from "chalk";
 // todo: replace console calls
 // tslint:disable: no-console
 
-export const CliQuestion = async (qq: string, nl = true): Promise<string> => {
+export const cliQuestion = async (qq: string, nl = true): Promise<string> => {
   return new Promise((resolve) => {
     const read = readline.createInterface({
       input: process.stdin,
@@ -18,10 +18,10 @@ export const CliQuestion = async (qq: string, nl = true): Promise<string> => {
   });
 };
 
-export const CliQuestionYN = async (qq: string) => {
+export const cliQuestionYN = async (qq: string) => {
   let res: boolean | undefined;
   do {
-    switch (await CliQuestion(qq + ` [${chalk.greenBright("Y")}/${chalk.redBright("N")}] `, false)) {
+    switch (await cliQuestion(qq + ` [${chalk.greenBright("Y")}/${chalk.redBright("N")}] `, false)) {
       case "Y": case "y":
         res = true;
         break;
@@ -34,7 +34,7 @@ export const CliQuestionYN = async (qq: string) => {
 };
 
 
-export const CliCollectionSelectOne: {
+export const cliCollectionSelectOne: {
   <T>(col: T[], display: (d: T) => string): Promise<T>,
   (col: string[]): Promise<string>,
 } = async <T>(col: T[], display: (d: T) => string = ((str: T) => str as any)): Promise<T> => {
@@ -50,32 +50,32 @@ export const CliCollectionSelectOne: {
     );
   };
   let res: string;
-  while (!await validateNumber(res = await CliQuestion("# to select"))) {
+  while (!await validateNumber(res = await cliQuestion("# to select"))) {
     console.log("invalid value selected");
   }
   return col[+res];
 };
 
 
-export const CliNumberFloat = async (qq: string) => {
+export const cliNumberFloat = async (qq: string) => {
   const validateNumber = async (str: string) => {
     const num = +str;
     return !Number.isNaN(num);
   };
   let res: string;
-  while (!await validateNumber(res = (await CliQuestion(qq)).split(",").join("."))) {
+  while (!await validateNumber(res = (await cliQuestion(qq)).split(",").join("."))) {
     console.log("invalid value selected");
   }
   return +res;
 };
 
-export const CliNumberInt = async (qq: string) => {
+export const cliNumberInt = async (qq: string) => {
   const validateNumber = async (str: string) => {
     const num = +str;
     return (num.toFixed(0) === num.toString(10)) && !Number.isNaN(num);
   };
   let res: string;
-  while (!await validateNumber(res = (await CliQuestion(qq)).split(",").join("."))) {
+  while (!await validateNumber(res = (await cliQuestion(qq)).split(",").join("."))) {
     console.log("invalid value selected");
   }
   return +res;
