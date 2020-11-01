@@ -1,0 +1,36 @@
+{
+  "public": true,
+  "name": "sciator-core",
+  "description": "util package for my projects",
+  "version": "0.0.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json ./src/**/*.ts{,x}",
+    "lint:fix": "yarn lint --fix",
+    "ci": "yarn install --frozen-lockfile"
+  },
+  "dependencies": {
+    "chalk": "2.4.2"
+  },
+  "devDependencies": {
+    "@types/chalk": "2.2.0",
+    "@types/node": "^13.1.8",
+    "semantic-release": "^17.2.2",
+    "typescript": "^3.8.3"
+  },
+  "author": {
+    "name": "Roman Wehmhőner",
+    "url": "https://github.com/Sciator/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "core",
+    "utils",
+    "basics"
+  ]
+}
