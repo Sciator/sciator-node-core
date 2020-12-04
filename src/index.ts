@@ -7,7 +7,7 @@ export * from "./JSONFile";
 export * from "./process";
 
 // CLI
-export * from "./cli/cliCommon";
+// export * from "./cli/cliCommon";
 
 // web
 export * from "./web/httpMethods";
