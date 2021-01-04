@@ -43,3 +43,15 @@ export const removeAllWhere = <T>(arr: T[], pred: (o: T) => boolean) => {
   }
   return removed.reverse();
 };
+
+/** Shuffle given array */
+export const shuffle = <T>(arr: T[]) => {
+  const swap = (i: number, j: number) => {
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    swap(i, j);
+  }
+};
